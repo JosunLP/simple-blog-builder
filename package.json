@@ -10,7 +10,7 @@
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"updateInfo": "tsc ./tools/syncInfo.ts --target esnext --module nodenext && node ./tools/syncInfo.js",
-		"lint": "npx eslint --ext .ts . --fix && npx prettier --write ."
+		"lint": "npx eslint --ext .ts . --fix"
 	},
 	"repository": {
 		"type": "git",
@@ -37,11 +37,9 @@
 	"devDependencies": {
 		"@types/aes-js": "^3.1.1",
 		"@types/node": "^18.0.6",
-		"@typescript-eslint/eslint-plugin": "^5.59.1",
+		"@typescript-eslint/eslint-plugin": "^5.62.0",
 		"@typescript-eslint/parser": "^5.59.1",
-		"eslint-config-prettier": "^8.7.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"eslint": "^8.39.0",
-		"prettier": "^2.8.4"
+		"eslint": "^8.57.0",
+		"eslint-plugin-editorconfig": "^4.0.3"
 	}
 }

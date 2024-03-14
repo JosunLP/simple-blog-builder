@@ -9,13 +9,7 @@
 		"sourceType": "module"
 	},
 	"extends": [
-		"eslint:recommended", // always (set of rules recommended by ESLint team)
-		"prettier" // always
+		"plugin:editorconfig/all" // always (set of rules recommended by ESLint team)
 	],
-	"rules": {
-		"prettier/prettier": "error" // always
-	},
-	"plugins": [
-		"prettier" // always
-	]
+	"plugins": ["editorconfig"]
 }
