@@ -1,40 +1,47 @@
 {
-  "name": "simple-blog-builder",
-  "version": "0.0.1",
-  "description": "A component library to build up fast blogs with markdown files",
-  "main": "index.js",
-  "type": "module",
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "updateInfo": "tsc ./tools/syncInfo.ts --target esnext --module esnext && node ./tools/syncInfo.js",
-    "lint": "eslint --ext .ts . --fix && prettier --write ."
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JosunLP/simple-blog-builder.git"
-  },
-  "keywords": [
-    "npm",
-    "library",
-    "blog",
-    "typescript",
-    "vue",
-    "svelte",
-    "angular"
-  ],
-  "author": {
-    "name": "Jonas Pfalzgraf",
-    "email": "info@josunlp.de"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JosunLP/simple-blog-builder/issues"
-  },
-  "homepage": "https://github.com/JosunLP/simple-blog-builder#readme",
-  "devDependencies": {
-    "@types/node": "^20.11.27"
-  }
+	"name": "simple-blog-builder",
+	"version": "0.0.1",
+	"description": "A component library to build up fast blogs with markdown files",
+	"main": "index.js",
+	"type": "module",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"updateInfo": "tsc ./tools/syncInfo.ts --target esnext --module esnext && node ./tools/syncInfo.js",
+		"lint": "eslint --ext .ts . --fix && prettier --write ."
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/JosunLP/simple-blog-builder.git"
+	},
+	"keywords": [
+		"npm",
+		"library",
+		"blog",
+		"typescript",
+		"vue",
+		"svelte",
+		"angular"
+	],
+	"author": {
+		"name": "Jonas Pfalzgraf",
+		"email": "info@josunlp.de"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/JosunLP/simple-blog-builder/issues"
+	},
+	"homepage": "https://github.com/JosunLP/simple-blog-builder#readme",
+	"devDependencies": {
+		"@types/aes-js": "^3.1.1",
+		"@types/node": "^18.0.6",
+		"@typescript-eslint/eslint-plugin": "^5.59.1",
+		"@typescript-eslint/parser": "^5.59.1",
+		"eslint-config-prettier": "^8.7.0",
+		"eslint-plugin-prettier": "^4.2.1",
+		"eslint": "^8.39.0",
+		"prettier": "^2.8.4"
+	}
 }
