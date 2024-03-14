@@ -1,29 +1,42 @@
-# simple-blog-builder
+# @simple-blog-builder/core
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-[![npm version](https://badge.fury.io/js/simple-blog-builder.svg)](https://badge.fury.io/js/simple-blog-builder)
-[![GitHub issues](https://img.shields.io/github/issues/JosunLP/simple-blog-builder)](https://github.com/JosunLP/simple-blog-builder/issues)
+[![npm version](https://badge.fury.io/js/simple-blog-builder/core.svg)](https://badge.fury.io/js/simple-blog-builder/core)
+[![GitHub issues](https://img.shields.io/github/issues/simple-blog-builder/core)](https://github.com/simple-blog-builder/core/issues)
 ![npm](https://img.shields.io/npm/dt/simple-blog-builder)
-[![CodeFactor](https://www.codefactor.io/repository/github/josunlp/simple-blog-builder/badge)](https://www.codefactor.io/repository/github/josunlp/simple-blog-builder)
+[![CodeFactor](https://www.codefactor.io/repository/github/simple-blog-builder/core/badge)](https://www.codefactor.io/repository/github/simple-blog-builder/core)
 [![TypeScript](https://img.shields.io/badge/Developed%20in-TypeScript-blue?logo=typescript)](https://www.typescriptlang.org/)
 
 A component library to build up fast blogs with markdown files
 
 ## Installation
 
-    npm install simple-blog-builder
+    npm install @simple-blog-builder/core
 
 ## Usage
 
 ```TypeScript
 
-// to be implemented
+import { SBBCore, SBBCoreConfig, SBBCoreBlogEntry } from '@simple-blog-builder/core';
+
+const blog = SBBCore.createBlog({
+  blogTitle: 'My Blog',
+  blogDescription: 'This is a simple blog',
+});
+
+const files: File[] = [
+  new File('01-01-2024-blog-example.md', '...'),
+  new File('01-01-2024-blog-example-2.md', '...'),
+  new File('01-01-2024-blog-example-3.md', '...'),
+];
+
+blog.loadEntries(files)
 
 ```
 
 ## Blog entry example
 
-```MarkDown
+```Markdown
 $HEADER
 TITLE: 01-01-2024 Blog Example
 AUTHOR: John Doe
@@ -43,11 +56,7 @@ This is a subtitle. It is a simple example of how to use the blog template.
 
 ## License
 
-    MIT
-
-## Tests
-
-For testing and development, you can use the StorybookJS implementation. Just run `npm run storybook` and open your browser at `http://localhost:6006/`
+    [MIT License](https://opensource.org/licenses/MIT)
 
 ## Docs
 

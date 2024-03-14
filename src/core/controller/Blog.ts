@@ -37,6 +37,25 @@ export class Blog {
 	 *
 	 * @returns {ConfigObject} The configuration object
 	 */
+	public getEntries(): BlogEntry[] {
+		return this.entries;
+	}
+
+	/**
+	 * Get the configuration object
+	 *
+	 * @returns {ConfigObject} The configuration object
+	 */
+	public addEntry(entry: BlogEntry): void {
+		this.entries.push(entry);
+		this.sortEntriesByDate();
+	}
+
+	/**
+	 * Get the configuration object
+	 *
+	 * @returns {ConfigObject} The configuration object
+	 */
 	private sortEntriesByDate(): void {
 		this.entries = this.entries.sort((a, b) => {
 			return new Date(b.date).getTime() - new Date(a.date).getTime();
