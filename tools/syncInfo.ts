@@ -19,6 +19,8 @@ readFile(packageFile, "utf8", (err, data) => {
 		target = replaceLine(target, "readonly VERSION", pkg.version);
 		target = replaceLine(target, "readonly LICENSE", pkg.license);
 		target = replaceLine(target, "readonly AUTHOR", pkg.author.name);
+		target = replaceLine(target, "readonly REPOSITORY", pkg.repository.url);
+		target = replaceLine(target, "readonly HOMEPAGE", pkg.homepage);
 
 		writeFile(targetFile, target, "utf8", function (err) {
 			if (err) return console.log(err);

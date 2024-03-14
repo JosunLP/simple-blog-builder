@@ -15,22 +15,44 @@ A component library to build up fast blogs with markdown files
 
 ## Usage
 
-    import { simple-blog-builder | sbb } from 'simple-blog-builder';
+```TypeScript
 
-    sbb.init(); // Generates a GUID
+// to be implemented
+
+```
+
+## Blog entry example
+
+```MarkDown
+$HEADER
+TITLE: 01-01-2024 Blog Example
+AUTHOR: John Doe
+DATE: 01-01-2024
+TAGS: blog, example
+$HEADER END
+
+# Content
+
+This is an example of a blog post. It is a simple example of how to use the blog template.
+
+## Subtitle
+
+This is a subtitle. It is a simple example of how to use the blog template.
+
+```
 
 ## License
 
-    MPL-2.0
+    MIT
 
 ## Tests
 
-    npm run test
+For testing and development, you can use the StorybookJS implementation. Just run `npm run storybook` and open your browser at `http://localhost:6006/`
 
 ## Docs
 
-To this point, the library is just documented by code comments. If you want an example of a few of the methods, you can check the `./test/test.js` file.
+To this point, the library is just documented by code comments. There will be a documentation page soon. Since the library is still in development, the documentation is not a priority.
 
 ## Support
 
-Soon (TM)
+Soon™

@@ -1,4 +1,6 @@
-import { SimpleBlog } from "./controller/SimpleBlog.js";
+import { Config } from "./config/Config.js";
+import Info from "./models/info.js";
+import { ConfigObject } from "./types/ConfigObject.type";
 
 /**
  * Simple blog builder
@@ -9,21 +11,17 @@ import { SimpleBlog } from "./controller/SimpleBlog.js";
  * @example
  */
 export default class SimpleBlogBuilder {
-	private _title: string;
-	private _content: string;
 
-	constructor() {
-		this._title = "";
-		this._content = "";
+	public constructor(config: ConfigObject) {
+		const configSrvs = Config.getInstance();
+		configSrvs.setConfig(config);
 	}
 
-	public init(config: { title: string; content: string }): SimpleBlogBuilder {
-		this._title = config.title;
-		this._content = config.content;
-		return this;
+	public getVersion(): string {
+		return new Info().getInfo().VERSION;
 	}
 
-	build(): SimpleBlog {
-		return new SimpleBlog(this._title, this._content);
+	public getLibraryInfo(): Info {
+		return new Info();
 	}
 }
