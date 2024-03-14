@@ -11,7 +11,7 @@ import { MdReader } from "./MdReader.js";
  * @example
  */
 export class Blog {
-	private readonly config: ConfigObject;
+	public readonly config: ConfigObject;
 	private entries: BlogEntry[] = [];
 
 	constructor(config: ConfigObject) {
