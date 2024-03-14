@@ -7,6 +7,8 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/simple-blog-builder/core/badge)](https://www.codefactor.io/repository/github/simple-blog-builder/core)
 [![TypeScript](https://img.shields.io/badge/Developed%20in-TypeScript-blue?logo=typescript)](https://www.typescriptlang.org/)
 
+## WIP
+
 A component library to build up fast blogs with markdown files
 
 ## Installation
