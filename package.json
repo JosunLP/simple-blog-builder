@@ -8,8 +8,9 @@
 		"test": "test"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"updateInfo": "tsc ./tools/syncInfo.ts --target esnext --module nodenext && node ./tools/syncInfo.js",
+		"build": "npx rimraf ./dist/ && npm run updateInfo && npm run lint && npm run build/core",
+		"build/core": "tsc -p tsconfig.json",
+		"updateInfo": "tsc ./tools/syncInfo.ts --outDir ./tools/ --target esnext --module nodenext && node ./tools/syncInfo.js",
 		"lint": "npx eslint --ext .ts . --fix"
 	},
 	"repository": {
@@ -35,6 +36,11 @@
 	},
 	"homepage": "https://github.com/JosunLP/simple-blog-builder#readme",
 	"devDependencies": {
+		"@storybook/angular": "^8.0.0",
+		"@storybook/react": "^8.0.0",
+		"@storybook/svelte": "^8.0.0",
+		"@storybook/vue": "^7.6.17",
+		"@storybook/web-components": "^8.0.0",
 		"@types/aes-js": "^3.1.1",
 		"@types/node": "^18.0.6",
 		"@typescript-eslint/eslint-plugin": "^5.62.0",

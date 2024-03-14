@@ -1,4 +1,4 @@
-import { BlogEntry } from "../types/BlogEntry.type.js";
+import { BlogEntry } from "../models/BlogEntry";
 
 /**
  * Md reader

@@ -1,4 +1,4 @@
-import { Config } from "./config/Config.js";
+import { Blog } from "./controller/Blog.js";
 import Info from "./models/info.js";
 import { ConfigObject } from "./types/ConfigObject.type";
 
@@ -11,16 +11,33 @@ import { ConfigObject } from "./types/ConfigObject.type";
  * @example
  */
 export default class SimpleBlogBuilder {
-	public constructor(config: ConfigObject) {
-		const configSrvs = Config.getInstance();
-		configSrvs.setConfig(config);
+	private constructor() {}
+
+	/**
+	 * Create a blog
+	 *
+	 * @param {ConfigObject} configObj The configuration object
+	 * @description Creates a blog with the configuration object
+	 */
+	public static createBlog(configObj: ConfigObject): Blog {
+		return new Blog(configObj);
 	}
 
-	public getVersion(): string {
+	/**
+	 * Get the version of the framework
+	 *
+	 * @returns {string} The version of the framework
+	 */
+	public static getVersion(): string {
 		return new Info().getInfo().VERSION;
 	}
 
-	public getLibraryInfo(): Info {
+	/**
+	 * Get the information of the framework
+	 *
+	 * @returns {Info} The information of the framework
+	 */
+	public static getLibraryInfo(): Info {
 		return new Info();
 	}
 }
