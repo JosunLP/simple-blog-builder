@@ -32,7 +32,7 @@ function replaceLine(target: string, searchString: string, pkg: any) {
 	const re = new RegExp("^.*" + searchString + ".*$", "gm");
 	target = target.replace(
 		re,
-		"	private " + searchString + ': string = "' + pkg + '";'
+		"	private " + searchString + ': string = "' + pkg + '";',
 	);
 	return target;
 }

@@ -11,7 +11,6 @@ import { ConfigObject } from "./types/ConfigObject.type";
  * @example
  */
 export default class SimpleBlogBuilder {
-
 	public constructor(config: ConfigObject) {
 		const configSrvs = Config.getInstance();
 		configSrvs.setConfig(config);

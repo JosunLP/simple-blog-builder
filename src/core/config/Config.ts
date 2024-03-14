@@ -5,13 +5,12 @@ import { ConfigObject } from "../types/ConfigObject.type";
  * @description The core class for the configuration of the simple blog
  */
 export class Config {
-
 	private static instance: Config;
 
 	private readonly data: ConfigObject = {
 		blogTitle: "Simple Blog",
-		blogSubtitle: "A simple blog"
-	}
+		blogSubtitle: "A simple blog",
+	};
 
 	private constructor() {}
 
