@@ -12,7 +12,7 @@ export default class Info {
 	/**
 	 * Version  of info
 	 */
-	private readonly VERSION: string = "0.0.1";
+	private readonly VERSION: string = "1.0.0";
 
 	/**
 	 * Author  of info
@@ -27,12 +27,12 @@ export default class Info {
 	/**
 	 * Repository  of info
 	 */
-	private readonly REPOSITORY: string = "git+https://github.com/JosunLP/simple-blog-builder.git";
+	private readonly REPOSITORY: string = "git+https://github.com/simple-blog-builder/core.git";
 
 	/**
 	 * Homepage  of info
 	 */
-	private readonly HOMEPAGE: string = "https://github.com/JosunLP/simple-blog-builder#readme";
+	private readonly HOMEPAGE: string = "https://github.com/simple-blog-builder/core#readme";
 
 	/**
 	 * Gets info

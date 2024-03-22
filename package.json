@@ -1,7 +1,7 @@
 {
 	"name": "@simple-blog-builder/core",
-	"version": "0.0.1",
-	"description": "WIP A component library to build up fast blogs with markdown files. This is the core package, which contains the logic to parse and render the markdown files.",
+	"version": "1.0.0",
+	"description": "A component library to build up fast blogs with markdown files. This is the core package, which contains the logic to parse and render the markdown files.",
 	"main": "index.ts",
 	"type": "module",
 	"directories": {
