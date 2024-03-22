@@ -1,9 +1,9 @@
 # @simple-blog-builder/core
 
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-[![npm version](https://badge.fury.io/js/simple-blog-builder/core.svg)](https://badge.fury.io/js/simple-blog-builder/core)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
+![NPM Version](https://img.shields.io/npm/v/@simple-blog-builder/core)
 [![GitHub issues](https://img.shields.io/github/issues/simple-blog-builder/core)](https://github.com/simple-blog-builder/core/issues)
-![npm](https://img.shields.io/npm/dt/simple-blog-builder)
+![npm](https://img.shields.io/npm/dt/@simple-blog-builder/core)
 [![CodeFactor](https://www.codefactor.io/repository/github/simple-blog-builder/core/badge)](https://www.codefactor.io/repository/github/simple-blog-builder/core)
 [![TypeScript](https://img.shields.io/badge/Developed%20in-TypeScript-blue?logo=typescript)](https://www.typescriptlang.org/)
 
