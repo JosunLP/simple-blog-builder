@@ -1,25 +1,25 @@
 import { Blog } from "./controller/Blog.js";
 import Info from "./models/info.js";
-import { ConfigObject } from "./types/ConfigObject.type";
+import { SBBCoreConfig } from "./types/ConfigObject.type";
 
 /**
  * Simple blog builder
  *
- * @class SimpleBlogBuilder
+ * @class SBBCore
  * @description The core class for building a simple blog. It is used to create a simple blog object, wich will be used in the framework components.
  *
  * @example
  */
-export default class SimpleBlogBuilder {
+export default class SBBCore {
 	private constructor() {}
 
 	/**
 	 * Create a blog
 	 *
-	 * @param {ConfigObject} configObj The configuration object
+	 * @param {SBBCoreConfig} configObj The configuration object
 	 * @description Creates a blog with the configuration object
 	 */
-	public static createBlog(configObj: ConfigObject): Blog {
+	public static createBlog(configObj: SBBCoreConfig): Blog {
 		return new Blog(configObj);
 	}
 

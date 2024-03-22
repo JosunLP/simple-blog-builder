@@ -1,4 +1,4 @@
-import { BlogEntry } from "../models/BlogEntry";
+import { SBBCoreBlogEntry } from "../models/BlogEntry";
 
 /**
  * Md reader
@@ -10,7 +10,7 @@ export class MdReader {
 	 * @param mdFile
 	 * @returns md file to json in BlogEntry format
 	 */
-	public static readMdFileToJSON(mdFile: File): BlogEntry {
+	public static readMdFileToJSON(mdFile: File): SBBCoreBlogEntry {
 		const headerStart = "$HEADER";
 		const headerEnd = "$HEADER END";
 
@@ -31,7 +31,7 @@ export class MdReader {
 			fileContent.indexOf(headerEnd) + headerEnd.length,
 		);
 
-		const blogEntry: BlogEntry = {
+		const blogEntry: SBBCoreBlogEntry = {
 			title: "",
 			date: "",
 			tags: [],

@@ -1,5 +1,5 @@
-import { BlogEntry } from "../models/BlogEntry.js";
-import { ConfigObject } from "../types/ConfigObject.type";
+import { SBBCoreBlogEntry } from "../models/BlogEntry.js";
+import { SBBCoreConfig } from "../types/ConfigObject.type";
 import { MdReader } from "./MdReader.js";
 
 /**
@@ -11,17 +11,17 @@ import { MdReader } from "./MdReader.js";
  * @example
  */
 export class Blog {
-	public readonly config: ConfigObject;
-	private entries: BlogEntry[] = [];
+	public readonly config: SBBCoreConfig;
+	private entries: SBBCoreBlogEntry[] = [];
 
-	constructor(config: ConfigObject) {
+	constructor(config: SBBCoreConfig) {
 		this.config = config;
 	}
 
 	/**
 	 * Get the configuration object
 	 *
-	 * @returns {ConfigObject} The configuration object
+	 * @returns {SBBCoreConfig} The configuration object
 	 */
 	public loadEntries(files: File[]): void {
 		files.forEach((file) => {
@@ -35,18 +35,18 @@ export class Blog {
 	/**
 	 * Get the configuration object
 	 *
-	 * @returns {ConfigObject} The configuration object
+	 * @returns {SBBCoreConfig} The configuration object
 	 */
-	public getEntries(): BlogEntry[] {
+	public getEntries(): SBBCoreBlogEntry[] {
 		return this.entries;
 	}
 
 	/**
 	 * Get the configuration object
 	 *
-	 * @returns {ConfigObject} The configuration object
+	 * @returns {SBBCoreConfig} The configuration object
 	 */
-	public addEntry(entry: BlogEntry): void {
+	public addEntry(entry: SBBCoreBlogEntry): void {
 		this.entries.push(entry);
 		this.sortEntriesByDate();
 	}
@@ -54,7 +54,7 @@ export class Blog {
 	/**
 	 * Get the configuration object
 	 *
-	 * @returns {ConfigObject} The configuration object
+	 * @returns {SBBCoreConfig} The configuration object
 	 */
 	private sortEntriesByDate(): void {
 		this.entries = this.entries.sort((a, b) => {

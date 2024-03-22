@@ -1,4 +1,4 @@
-export type ConfigObject = {
+export type SBBCoreConfig = {
 	blogTitle: string;
 	blogSubtitle?: string;
 };

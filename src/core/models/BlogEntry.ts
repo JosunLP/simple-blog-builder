@@ -9,7 +9,7 @@
  * @property {string} content - The content of the blog entry
  *
  * @example
- * const blogEntry = new BlogEntry(
+ * const blogEntry = new SBBCoreBlogEntry(
  * 	"Hello World",
  * 	"2021-01-01",
  * 	"John Doe",
@@ -17,7 +17,7 @@
  * 	"Hello, world!"
  * );
  */
-export class BlogEntry {
+export class SBBCoreBlogEntry {
 	public title: string;
 	public date: string;
 	public author: string;
